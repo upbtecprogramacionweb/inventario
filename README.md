@@ -12,9 +12,10 @@ Diseñar e implementar una aplicación web que simule un punto de venta para una
 # JavaScript: 
 
 # Requerimientos del RETO:
-
++ Los nombres de los productos los escriben en mayusculas
 + Obtener productos ingresados a través del formulario (nombre, cantidad, valor unitario).
 + Guardar cada venta en un array de objetos.
++ Si se ingresa un producto con el mismo nombre que ya existe en el carrito, no se agregue como nuevo, sino que se sumen las cantidades y se actualice el subtotal del producto
 + Mostrar en una tabla los productos vendidos con su subtotal.
 + Calcular el total general de la venta.
 + Botón de “Finalizar venta” que:
