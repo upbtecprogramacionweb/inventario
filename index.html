@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Gestión de Ventas</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <section id="contenedor">
+    <h1 id="tituloPrincipal">Sistema de Gestión de Ventas</h1>
+
+    <article id="divRegistro"> 
+      <form id="formVenta">
+        <label>Nombre producto</label>
+        <input type="text" id="nombreProducto" placeholder="Nombre del producto" required />
+        <label>Cantidad</label>
+        <input type="number" id="cantidadProducto" placeholder="Cantidad" required />
+        <label>Valor unitario</label>
+        <input type="number" id="valorProducto" placeholder="Valor del producto" required />
+        <input type="submit" value="Agregar al carrito" />
+      </form>
+    </article>
+
+    <div id="listaProductos">
+      <h2>Listado de productos agregados al producto</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Valor Unidad</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="filasProductos">
+          <!-- Aquí se mostrarán los productos -->
+        </tbody>
+      </table>
+      <div id="resumen">Total venta: $<span id="totalVenta">225.000</span></div>
+      <button id="btn-finalizar-venta">Finalizar Venta</button>
+    </div>
+  </section>
+</body>
+</html>
